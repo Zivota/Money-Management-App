@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scheduler</title>
+		<link href="style.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="app">
+			<!-- start of head div -->
+			<div class="head-div">
+				<a href="index.html">
+					<button id="back-btn">
+						<i class="fal fa-long-arrow-left"></i>
+					</button>
+				</a>
+
+				<h1>
+					<span id="name-span"> Guest</span>'s <br />
+					Schedule
+				</h1>
+			</div>
+			<!-- end of head div -->
+
+			<!-- start of schedule interface holder -->
+			<div class="schedule-interface-holder">
+				<h1 id="week">Week Schedule</h1>
+			</div>
+			<!-- end of schedule interface holder -->
+
+			<!-- start of week schedule interface -->
+			<div class="schedule-interface">
+				<div class="input-holder">
+					<input
+						id="schedule-input"
+						type="text"
+						placeholder="Enter Your Schedule"
+						maxlength="20"
+					/>
+					<button id="schedule-input-btn" type="submit">SUBMIT</button>
+				</div>
+
+				<!-- end of input holder -->
+
+				<div class="week-schedule-holder">
+					<!-- start of todo-div -->
+					<div class="toDo-div">
+						<!-- start of select holder -->
+						<div class="select-holder">
+							<select id="daySelect">
+								<option id="mon" value="monday">Monday</option>
+								<option value="tuesday">Tuesday</option>
+								<option value="wensday">Wensday</option>
+								<option value="thursday">Thursday</option>
+								<option value="friday">Friday</option>
+								<option value="saturday">Saturday</option>
+								<option value="sunday">Sunday</option>
+							</select>
+						</div>
+						<!-- end of select holder -->
+
+						<div class="days">
+							<!-- start of monday -->
+							<div class="monday">
+								<h1>Monday</h1>
+								<ul class="mon-ul"></ul>
+							</div>
+							<!-- end of monday and start of tuesday -->
+							<div class="tuesday">
+								<h1>Tuesday</h1>
+								<ul class="tue-ul"></ul>
+							</div>
+							<!-- end of tuesday and start of wensday -->
+							<div class="wensday">
+								<h1>Wensday</h1>
+								<ul class="wen-ul"></ul>
+							</div>
+							<!-- end of wensday and start of thursday -->
+							<div class="thursday">
+								<h1>Thursday</h1>
+								<ul class="thu-ul"></ul>
+							</div>
+							<!-- end of thursday and start of friday -->
+							<div class="friday">
+								<h1>Friday</h1>
+								<ul class="fri-ul"></ul>
+							</div>
+							<!-- end of friday and start of saturday -->
+							<div class="saturday">
+								<h1>Saturday</h1>
+								<ul class="sat-ul"></ul>
+							</div>
+							<!-- end of saturday and start of sunday -->
+							<div class="sunday">
+								<h1>Sunday</h1>
+								<ul class="sun-ul"></ul>
+							</div>
+							<!-- end of sunday -->
+						</div>
+					</div>
+					<!-- end of todo-div -->
+				</div>
+				<!-- end of week schedule holder -->
+			</div>
+			<!-- end of schedule interface holder -->
+		</div>
+		<!-- end of app -->
+		<script src="schedule.js"></script>
+	</body>
+</html>

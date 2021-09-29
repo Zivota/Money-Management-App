@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Money Management App</title>
+		<link href="style.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="app">
+			<!-- modal for name changing -->
+			<div class="changeNameModal">
+				<div class="changeNameDiv">
+					<h1>Change Name</h1>
+					<input
+						id="nameChangerInput"
+						type="text"
+						placeholder="Enter Your Name"
+						maxlength="30"
+					/>
+					<button id="nameChangerBtn" type="submit">SUBMIT</button>
+					<button id="closeModalBtn">
+						<i class="fas fa-times-circle"></i>
+					</button>
+				</div>
+			</div>
+
+			<!-- end of name changing modal -->
+
+			<!-- start of main interface - head interface -->
+			<div class="main-interface">
+				<!-- name input part -->
+				<h1 id="welcome">
+					Spend Carefully <br />
+					<span id="welcome-span"></span>
+				</h1>
+				<input
+					id="name-input"
+					type="text"
+					placeholder="Enter your Name"
+					maxlength="30"
+				/>
+				<button id="name-button" type="submit">SUBMIT</button>
+
+				<!-- account balance part -->
+				<div class="balance-showcase">
+					<h1>
+						<span id="name-span">Guest</span>'s Balance:
+						<span id="money-span"> $0 </span>
+					</h1>
+
+					<div class="balance-buttons">
+						<button id="nameChanger"><i class="fas fa-pen"></i></button>
+						<a href="schedule.html">
+							<button id="scheduler">
+								<i class="far fa-calendar-alt"> </i>
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- end of account balance -->
+			</div>
+			<!-- end of main interface -->
+
+			<!-- Income interface -->
+			<div class="income-interface">
+				<div class="income-input-div">
+					<h3>
+						Enter Your <br />
+						Income <br />
+						Source <br />
+						& Amount
+					</h3>
+
+					<div class="income-holder">
+						<input
+							id="income-name-input"
+							type="text"
+							placeholder="Income Source"
+							maxlength="20"
+						/>
+						<input id="income-amount-input" type="number" placeholder="0$" />
+						<button id="income-btn">SUBMIT</button>
+					</div>
+				</div>
+				<table id="income-table">
+					<tr>
+						<th class="blue">Income Source</th>
+						<th class="green">Amount</th>
+					</tr>
+				</table>
+				<button id="clearIncomeBtn" class="clearBtn">CLEAR ALL</button>
+			</div>
+			<!-- end of income interface -->
+
+			<!-- expense interface -->
+			<div class="expense-interface">
+				<div class="expense-input-div">
+					<h3>
+						Enter Your <br />
+						Expense <br />
+						Source <br />
+						& Amount
+					</h3>
+
+					<div class="expense-holder">
+						<input
+							id="expense-name-input"
+							type="text"
+							placeholder="Expense Source"
+							maxlength="20"
+						/>
+						<input id="expense-amount-input" type="number" placeholder="0$" />
+						<button id="expense-btn">SUBMIT</button>
+					</div>
+				</div>
+				<table id="expense-table">
+					<tr>
+						<th class="red">Expense Source</th>
+						<th class="green">Amount</th>
+					</tr>
+				</table>
+				<button id="clearExpenseBtn" class="clearBtn">CLEAR ALL</button>
+			</div>
+
+			<!-- end of expense interface -->
+			<!-- end of app -->
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
